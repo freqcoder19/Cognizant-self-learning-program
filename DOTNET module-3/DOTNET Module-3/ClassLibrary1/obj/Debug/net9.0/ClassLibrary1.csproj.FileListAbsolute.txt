@@ -1,0 +1,4 @@
+D:\AWS NOTES\AWS NOTES\ConsoleApp1\ClassLibrary1\obj\Debug\net9.0\ClassLibrary1.GeneratedMSBuildEditorConfig.editorconfig
+D:\AWS NOTES\AWS NOTES\ConsoleApp1\ClassLibrary1\obj\Debug\net9.0\ClassLibrary1.AssemblyInfoInputs.cache
+D:\AWS NOTES\AWS NOTES\ConsoleApp1\ClassLibrary1\obj\Debug\net9.0\ClassLibrary1.AssemblyInfo.cs
+D:\AWS NOTES\AWS NOTES\ConsoleApp1\ClassLibrary1\obj\Debug\net9.0\ClassLibrary1.csproj.CoreCompileInputs.cache
