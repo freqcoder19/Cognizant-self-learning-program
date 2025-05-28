@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Community Event Registration</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  
+  <style>
+    .footer-fixed { position: fixed; bottom: 0; width: 100%; }
+    .badge-overlay { position: absolute; top: 10px; right: 10px; }
+    .hero {
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">EventPro</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1 class="display-3">Join Our Local Community Event!</h1>
+    <p class="lead">Register now to participate in talks, workshops, and networking activities.</p>
+    <a href="#register" class="btn btn-light btn-lg">Register Now</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="container mt-5" id="about">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <i class="bi bi-calendar-event display-4 text-primary"></i>
+      <h4 class="mt-2">Event Date</h4>
+      <p>June 20–22, 2025 at Community Hall</p>
+    </div>
+    <div class="col-md-4">
+      <i class="bi bi-people-fill display-4 text-success"></i>
+      <h4 class="mt-2">Workshops & Talks</h4>
+      <p>Learn from industry experts and local innovators.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="bi bi-cup-straw display-4 text-warning"></i>
+      <h4 class="mt-2">Fun Activities</h4>
+      <p>Games, food stalls, and cultural performances.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Registration Form -->
+<section class="container mt-5" id="register">
+  <h2 class="text-center mb-4">Register for the Event</h2>
+  <form class="bg-white p-4 rounded shadow-sm">
+    <div class="mb-3">
+      <label for="fullName" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="fullName" placeholder="John Doe">
+    </div>
+    <div class="mb-3">
+      <label for="emailAddress" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="emailAddress" placeholder="you@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="role" class="form-label">Registering As</label>
+      <select class="form-select" id="role">
+        <option>Attendee</option>
+        <option>Speaker</option>
+        <option>Volunteer</option>
+      </select>
+    </div>
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" id="termsCheck" required>
+      <label class="form-check-label" for="termsCheck">
+        I agree to the <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">terms and conditions</a>
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Registration</button>
+  </form>
+</section>
+
+<!-- Pricing Section -->
+<section class="container mt-5" id="pricing">
+  <h2 class="text-center mb-4">Pricing</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card text-center p-3">
+        <h5 class="card-title">Student</h5>
+        <p class="card-text display-6">₹99</p>
+        <button class="btn btn-outline-primary">Choose</button>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-center p-3 border-success">
+        <h5 class="card-title">Professional</h5>
+        <p class="card-text display-6">₹199</p>
+        <button class="btn btn-outline-success">Choose</button>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-center p-3 border-warning">
+        <h5 class="card-title">VIP</h5>
+        <p class="card-text display-6">₹499</p>
+        <button class="btn btn-outline-warning">Choose</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal for Terms -->
+<div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Terms & Conditions</h5></div>
+      <div class="modal-body">
+        You agree to participate respectfully and abide by community guidelines.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3 footer-fixed">
+  <div>
+    <i class="bi bi-facebook me-2"></i>
+    <i class="bi bi-instagram me-2"></i>
+    <i class="bi bi-envelope"></i>
+  </div>
+  <p class="mb-0">© 2025 EventPro. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
