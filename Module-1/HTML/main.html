@@ -97,69 +97,7 @@
   </footer>
 
   <!-- JavaScript -->
-  <script>
-    function savePreference() {
-      const eventType = document.getElementById("eventType").value;
-      localStorage.setItem("preferredEvent", eventType);
-    }
-
-    function loadPreference() {
-      const saved = localStorage.getItem("preferredEvent");
-      if (saved) {
-        document.getElementById("eventType").value = saved;
-      }
-    }
-
-    function clearPreferences() {
-      localStorage.clear();
-      sessionStorage.clear();
-    }
-
-    function validatePhone(el) {
-      if (!/^\d{10}$/.test(el.value)) {
-        alert("Phone number must be 10 digits");
-      }
-    }
-
-    function showFee(el) {
-      document.getElementById("fee").textContent = `Fee: ₹${el.value}`;
-    }
-
-    function confirmSubmit() {
-      document.getElementById("formOutput").value = "Thank you for registering!";
-      return false;
-    }
-
-    function enlargeImage(el) {
-      el.style.transform = "scale(1.5)";
-    }
-
-    function countChars(el) {
-      document.getElementById("charCount").textContent = `Characters: ${el.value.length}`;
-    }
-
-    function videoReady() {
-      document.getElementById("videoStatus").textContent = "Video ready to play!";
-    }
-
-    window.onbeforeunload = function () {
-      return "Are you sure you want to leave?";
-    };
-
-    function findEvents() {
-      navigator.geolocation.getCurrentPosition(
-        pos => {
-          const coords = `Latitude: ${pos.coords.latitude}, Longitude: ${pos.coords.longitude}`;
-          document.getElementById("location").textContent = coords;
-        },
-        err => {
-          alert("Geolocation error: " + err.message);
-        },
-        { enableHighAccuracy: true, timeout: 5000 }
-      );
-    }
-
-    window.onload = loadPreference;
+ <script src="main.js"></script>
   </script>
 </body>
 </html>
