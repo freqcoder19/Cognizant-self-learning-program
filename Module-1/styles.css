@@ -1,0 +1,158 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography - Google Fonts */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header styles */
+nav {
+  background-color: #333;
+  padding: 10px 20px;
+  text-align: right;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome Banner */
+#welcomeBanner {
+  background: linear-gradient(to right, #007bff, #00d4ff);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Form Styling */
+form {
+  margin: 20px auto;
+  padding: 20px;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+input, select, textarea, output {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+/* Highlight selected input */
+input:focus, textarea:focus {
+  outline: 2px solid #007bff;
+}
+
+/* Event Gallery Styles */
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+td, th {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Zebra striping */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.event-image {
+  border: 2px solid #555;
+  width: 150px;
+  transition: transform 0.3s;
+}
+
+/* Buttons */
+button, input[type="submit"] {
+  background-color: #b4bcc5;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #959595;
+}
+
+/* Link Styling */
+a:link { color: #00d4ff; }
+a:visited { color: purple; }
+a:hover { color: orange; }
+a:active { color: red; }
+
+/* List Styling (if applicable) */
+ul, ol {
+  list-style-type: square;
+  list-style-position: inside;
+  margin: 10px 0 10px 20px;
+  padding-left: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* .eventCard (for layout control demo) */
+.eventCard {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  outline: 1px dashed lightgray;
+}
+
+/* Bulletin Section */
+#bulletin {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  nav {
+    text-align: center;
+  }
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .event-image {
+    width: 100px;
+  }
+
+  body {
+    font-size: 0.9rem;
+  }
+}
